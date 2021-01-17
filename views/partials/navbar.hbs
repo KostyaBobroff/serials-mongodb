@@ -1,0 +1,17 @@
+<nav>
+  <div class="nav-wrapper nav">
+    <a href="/" class="brand-logo">Serials Now</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {{#if isIndex}}
+        <li class="active"><a href="/">Поиск</a></li>
+      {{else}}
+        <li><a href="/">Найти</a></li>
+      {{/if}}
+      {{#if isCreate}}
+        <li class="active"><a href="/сreate">Создать</a></li>
+      {{else}}
+        <li><a href="/create">Создать</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>

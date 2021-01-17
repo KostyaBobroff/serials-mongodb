@@ -1,0 +1,34 @@
+<h1>Поиск</h1>
+<div class="row">
+  <form class="col s12" method="GET" action='/'>
+    <div class="input-field col s9">
+      <input id="serials_name" type="text" class="validate" name="serial">
+      <label for="serials_name">Введите название сериала</label>
+    </div>
+    <div class="input-field col s3">
+      <button class="btn waves-effect waves-light" type="submit">Найти
+        <i class="material-icons right">search</i>
+      </button>
+    </div>
+  </form>
+</div>
+{{#if showLinkToAllSerials}}
+  <div class="row"><a href='/'>Показать весь список сериалов</a></div>
+{{/if}}
+<div class="row">
+{{# each serials}}
+  <div class="col s12 m6">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">{{title}}</span>
+        <p>{{lastTitle}}</p>
+        <p>{{genre}}</p>
+        <h6>Ограничения по возрасту: {{ageLimits}} лет</h6>
+      </div>
+      <div class="card-action">
+        <a href="/serial/{{_id}}">Подробнее о сериале</a>
+      </div>
+    </div>
+  </div>
+{{/each}}
+</div>

@@ -1,0 +1,22 @@
+<h5>Актеры</h5>
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="actors_name" type="text" class="validate" name="actors_name" required>
+    <label for="actors_name">ФИО</label>
+  </div>
+</div> 
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="actors_birthday" type="date" class="validate" name="actors_birthday" required>
+    <label for="actors_birthday">Дата рождения</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s6">
+    <select  id="actors_gender"  name="actors_gender">
+      <option value="male" selected>Муж.</option>
+      <option value="female">Жен.</option>
+    </select>
+  </div>
+</div>
+{{> actors_prize}}

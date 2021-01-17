@@ -1,0 +1,33 @@
+<h4>Cерии</h4>
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="series_title" type="text" class="validate" name="series_title" required>
+    <label for="series_title">Название сезона</label>
+  </div>
+</div> 
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="series_premiere" type="date" class="validate" name="series_premiere" required>
+    <label for="series_premiere">Премьера</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="series_raiting" type="number" class="validate" name="series_raiting" required min="0" max="10">
+    <label for="series_raiting">Рейтинг</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="series_trailer" type="url" class="validate" name="series_trailer" required>
+    <label for="series_trailer">Трейлер</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="series_cover" type="text" class="validate" name="series_cover" required>
+    <label for="series_cover">Прокат</label>
+  </div>
+</div> 
+{{> actors}}
+{{> fillmakers}}

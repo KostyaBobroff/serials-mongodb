@@ -1,0 +1,33 @@
+
+<h3>Сезоны</h3>
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="seassons_title" type="text" class="validate" name="seassons_title" required>
+    <label for="seassons_title">Название сезона</label>
+  </div>
+</div> 
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="seassons_premiere" type="date" class="validate" name="seassons_premiere" required>
+    <label for="seassons_premiere">Премьера</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="seassons_raiting" type="number" class="validate" name="seassons_raiting" required min="0" max="10">
+    <label for="seassons_raiting">Рейтинг</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="seassons_trailer" type="url" class="validate" name="seassons_trailer" required>
+    <label for="seassons_trailer">Трейлер</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s6">
+    <input  id="seassons_cover" type="text" class="validate" name="seassons_cover" required>
+    <label for="seassons_cover">Прокат</label>
+  </div>
+</div> 
+{{> series}}
